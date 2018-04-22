@@ -5,17 +5,78 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="P2IRC Image Verification">
-    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- style sheets  -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
     <meta name="author" content="kiranbandi">
     <title>P2IRC Image Verification</title>
 </head>
 
 <body>
-    <h2 id='loaderText'>P2IRC Image Console</h2>
-    <div id='root'></div>
+
+    <div class='container'>
+        <h2 class='text-center greeting-text'>P2IRC Image Analaysis Dashboard</h2>
+
+        <div class='text-center start-button-panel'>
+            <button type="button" id='start-button' class="btn btn-primary btn-lg">Get Started</button>
+        </div>
+
+        <div class='verification-panel hidden'>
+
+            <div class='before-image-container'>
+                <h2>Before</h2>
+                <img src=" https://s3.ca-central-1.amazonaws.com/p2ircimagebucket/old/0.jpg" alt="Before Image">
+            </div>
+
+            <div class='after-image-container'>
+                <h2>After</h2>
+                <img src=" https://s3.ca-central-1.amazonaws.com/p2ircimagebucket/new/0.jpg" alt="After Image">
+            </div>
+
+            <div class='radio-button-container'>
+
+                <div class="radio-container">
+
+                    <ul>
+                        <li>
+                            <input type="radio" id="f-option" name="selector">
+                            <label for="f-option">Option 1</label>
+                            <div class="check"></div>
+                        </li>
+
+                        <li>
+                            <input type="radio" id="s-option" name="selector">
+                            <label for="s-option">Option 2</label>
+                            <div class="check">
+                                <div class="inside"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <input type="radio" id="t-option" name="selector">
+                            <label for="t-option">Option 3</label>
+                            <div class="check">
+                                <div class="inside"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class='complete-panel hidden'>
+            <button type="button" id='download-button' class="btn btn-success btn-lg">Download Report</button>
+        </div>
+
+    </div>
     <script src="assets/bundle.js"></script>
 </body>
 
