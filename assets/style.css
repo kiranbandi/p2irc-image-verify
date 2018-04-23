@@ -16,6 +16,10 @@
 
 .plant-image {
   border-radius: 10px;
+  background: url(images/spinner.gif) no-repeat;
+  background-position: center;
+  min-height: 200px;
+  min-width: 100%;
 }
 
 .image-banner {
