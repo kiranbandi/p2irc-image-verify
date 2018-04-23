@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="P2IRC Image Verification">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- style sheets  -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <meta name="author" content="kiranbandi">
+    <title>P2IRC Image Verification</title>
+</head>
+
+<body>
+
+    <div class='container'>
+        <h2 class='text-center bg-info banner'>P2IRC IMAGE ANALYSIS DASHBOARD</h2>
+
+        <div class='text-center start-button-panel'>
+            <p class='generic-paragraph'>Welcome to the Image analysis dashboard.This web application lets you rate images and generate a consolidated report.Each image can be rated using one of the three options provided below.Click on the button below to get started.</p>
+
+            <button type="button" id='start-button' class="btn btn-primary btn-lg">GET STARTED</button>
+        </div>
+
+        <div class='verification-panel hidden'>
+
+            <div class='before-image-container'>
+                <h3 class='text-center image-banner'>BEFORE <span class='text-count'> - 1</span> </h3>
+                <img class='img-responsive rounded plant-image old-image' src=" https://s3.ca-central-1.amazonaws.com/p2ircimagebucket/old/0.jpg"
+                    alt="Before Image">
+            </div>
+
+            <div class='after-image-container'>
+                <h3 class='text-center image-banner'>AFTER <span class='text-count'> - 1</span> </h3>
+                <img class='img-responsive rounded plant-image new-image' src=" https://s3.ca-central-1.amazonaws.com/p2ircimagebucket/new/0.jpg"
+                    alt="After Image">
+            </div>
+
+            <div class='radio-button-container'>
+
+                <div class="radio-container">
+
+                    <ul>
+                        <li>
+                            <input type="radio" id="1-option" value='1' name="rating">
+                            <label for="1-option">Option 1</label>
+                            <div class="check"></div>
+                        </li>
+
+                        <li>
+                            <input type="radio" id="2-option" value='2' name="rating">
+                            <label for="2-option">Option 2</label>
+                            <div class="check">
+                                <div class="inside"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <input type="radio" id="3-option" value='3' name="rating">
+                            <label for="3-option">Option 3</label>
+                            <div class="check">
+                                <div class="inside"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class='nav-button-container'>
+                <button type="button" id='previous' class="btn btn-info btn-lg nav-button disabled">PREVIOUS</button>
+                <button type="button" id='next' class="btn btn-info btn-lg nav-button">NEXT</button>
+            </div>
+
+        </div>
+
+        <div class='complete-panel text-center hidden'>
+            <p class='generic-paragraph'> Please click on the download button to get a consolidated report.If the download doesnt work , ensure your browser
+                is not blocking any automatic downloads and click the button again.In case you want to recheck your verfication
+                results click on the back button to head back.</p>
+            <button type="button" id='back-button' class="btn btn-success btn-lg">BACK</button>
+            <button type="button" id='download-button' class="btn btn-info btn-lg">DOWNLOAD REPORT</button>
+        </div>
+
+    </div>
+    <script src="assets/bundle.js"></script>
+</body>
+
+</html>
