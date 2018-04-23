@@ -70,6 +70,9 @@ $(".nav-button").click((event) => {
 
 function switchSource(sourceCount) {
     $(".text-count").text(" - " + (sourceCount + 1))
+    $(".plant-image").remove();
+    $(".before-image-container").append('<img class="img-responsive rounded plant-image old-image">');
+    $(".after-image-container").append('<img class="img-responsive rounded plant-image new-image">');
     $('.old-image').attr('src', imageSource + "/old/" + sourceCount + ".jpg");
     $('.new-image').attr('src', imageSource + "/new/" + sourceCount + ".jpg")
 }
@@ -81,6 +84,7 @@ $("#back-button").click(() => {
 })
 
 $("#download-button").click(() => {
+    swal("Thank You", "Please send the attached report to 'anupama@mail.usask.ca'.If the download doesnt work , ensure that your browser is not blocking any automatic downloads and click the button again.", "success");
     saveData("p2irc_image_report", verificationResult)
 })
 
