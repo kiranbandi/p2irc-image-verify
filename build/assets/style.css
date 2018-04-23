@@ -2,15 +2,79 @@
     height: 1000px;
 }
 
-.greeting-text {
-    color: #7ca79d;
+.banner {
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #8ebe9a;
+}
+
+.radio-container {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.plant-image {
+  border-radius: 10px;
+}
+
+.image-banner {
+  color: white;
+  background: #be8e8e;
+  padding: 10px;
+  border-radius: 8px;
+  width: 35%;
+  margin: 15px auto;
+}
+
+.nav-button {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+#next {
+  float: right;
+}
+
+.nav-button-container {
+  margin-bottom: 5%;
+}
+.complete-panel, .start-button-panel {
+  padding: 20px;
+}
+
+.complete-panel > button , .start-button-panel > button {
+  margin: 10px;
+}
+
+.generic-paragraph {
+  text-align: left;
+  font-size: 1.3em;
 }
 
 
 
 
 
-/* ??????????????????????????? */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for Radio Button START */
 
 
 .radio-container ul{
@@ -90,4 +154,4 @@
   
   
 
-/* ????????????????????????????? */
+/* END */
