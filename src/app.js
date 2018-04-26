@@ -84,7 +84,7 @@ $("#back-button").click(() => {
 })
 
 $("#download-button").click(() => {
-    swal("Thank You", "Please send the attached report to 'anupama@mail.usask.ca'.If the download doesnt work , ensure that your browser is not blocking any automatic downloads and click the button again.", "success");
+    swal("Thank You", 'Please send the downloaded report to "anupamadas31@gmail.com" .If the download doesnt work , ensure that your browser is not blocking any automatic downloads and click the button again.', "success");
     saveData("p2irc_image_report", verificationResult)
 })
 
